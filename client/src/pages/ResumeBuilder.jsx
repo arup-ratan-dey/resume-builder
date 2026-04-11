@@ -4,6 +4,7 @@ import { dummyResumeData } from '../assets/assets'
 import { ArrowLeftIcon, User, FileText, Briefcase, GraduationCap, Sparkles, ChevronLeft, ChevronRight } from 'lucide-react'
 import PersonalInfoForm from '../components/personalInfoForm'
 
+
 const ResumeBuilder = () => {
 
   const { resumeId } = useParams()
@@ -106,6 +107,7 @@ const ResumeBuilder = () => {
 
             {/*Right Panel - Preview */}
             <div></div>
+            
           </div>
       </div>
 
