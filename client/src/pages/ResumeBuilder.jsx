@@ -2,7 +2,7 @@ import React, { useState, useEffect} from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { dummyResumeData } from '../assets/assets'
 import { ArrowLeftIcon, User, FileText, Briefcase, GraduationCap, Sparkles, ChevronLeft, ChevronRight } from 'lucide-react'
-import PersonalInfoForm from '../components/personalInfoForm'
+import PersonalInfo from '../components/PersonalInfo'
 
 
 const ResumeBuilder = () => {
@@ -96,7 +96,7 @@ const ResumeBuilder = () => {
                     {/* Form Content*/}
                     <div className='space-y-6'>
                           {activeSection.id === 'personal' && (
-                            <PersonalInfoForm data={resumeData.personal_info} onChange={
+                            <PersonalInfo data={resumeData.personal_info} onChange={
                               (data)=>setResumeData(prev=> ({...prev, personal_info:data}))}  
                               removeBackground={removeBackground} setRemoveBackground={setRemoveBackground}/>
                           )}
