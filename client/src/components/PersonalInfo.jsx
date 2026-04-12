@@ -82,3 +82,7 @@ const PersonalInfo = ({data, onChange, removeBackground, setRemoveBackground}) =
 }
 
 export default PersonalInfo
+
+
+
+

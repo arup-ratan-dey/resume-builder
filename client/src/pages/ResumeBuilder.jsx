@@ -1,8 +1,9 @@
 import React, { useState, useEffect} from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { dummyResumeData } from '../assets/assets'
-import { ArrowLeftIcon, User, FileText, Briefcase, GraduationCap, Sparkles, ChevronLeft, ChevronRight } from 'lucide-react'
+import { ArrowLeftIcon, User, FileText, Briefcase, GraduationCap, Sparkles, ChevronLeft, ChevronRight, FolderIcon } from 'lucide-react'
 import PersonalInfo from '../components/PersonalInfo'
+import ResumePreview from '../components/ResumePreview'
 
 
 const ResumeBuilder = () => {
@@ -18,7 +19,7 @@ const ResumeBuilder = () => {
     education: [],
     project: [],
     skills: [],
-    template: "classic",
+    template: "minimal-image",
     accent_color: "#3B82F6",
     public: false,
   })
@@ -40,7 +41,8 @@ const ResumeBuilder = () => {
   {id: "summary", name: "Summary", icon: FileText},
   {id: "experience", name: "Experience", icon: Briefcase},
   {id: "education", name: "Education", icon: GraduationCap},
-  {id: "skills", name: "skills", icon: Sparkles},
+  {id: "projects", name: "Projects", icon: FolderIcon},
+  {id: "skills", name: "Skills", icon: Sparkles},
   ]
 
   const activeSection = sections[activeSectionIndex]
@@ -55,7 +57,7 @@ const ResumeBuilder = () => {
       <div className='max-w-7xl mx-auto px-4 py-6'>
         <Link to={'/app'} className='inline-flex gap-2 items-center text-slate-500 
         hover:text-slate-700 transition-all'>
-          <ArrowLeftIcon className='size-4'/> Back to Dashboard
+          <ArrowLeftIcon className="size-4"/> Back to Dashboard
         </Link>
       </div>
 
@@ -106,8 +108,14 @@ const ResumeBuilder = () => {
             </div>
 
             {/*Right Panel - Preview */}
-            <div></div>
-            
+            <div className="lg:col-span-7 max-lg:mt-6">
+              <div>
+                {/* ---- buttons ---- */}
+              </div>
+
+              <ResumePreview data={resumeData} template={resumeData.template}
+              accentColor={resumeData.accent_color}/>
+            </div>
           </div>
       </div>
 
@@ -116,3 +124,8 @@ const ResumeBuilder = () => {
 }
 
 export default ResumeBuilder
+
+
+
+
+
