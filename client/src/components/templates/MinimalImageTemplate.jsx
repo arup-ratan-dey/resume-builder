@@ -189,8 +189,6 @@
 
 // export default MinimalImageTemplate;
 
-
-import { Mail, Phone, MapPin } from "lucide-react";
 import React from 'react'
 
 const MinimalImageTemplate = ({ data, accentColor }) => {
@@ -243,30 +241,30 @@ const MinimalImageTemplate = ({ data, accentColor }) => {
                         <div className="space-y-2 text-sm">
                             {data.personal_info?.phone && (
                                 <div className="flex items-center gap-2">
-                                    <Phone size={14} style={{ color: accentColor }} />
+                                    <span style={{ color: accentColor }}>📞</span>
                                     <span>{data.personal_info.phone}</span>
                                 </div>
                             )}
                             {data.personal_info?.email && (
                                 <div className="flex items-center gap-2">
-                                    <Mail size={14} style={{ color: accentColor }} />
+                                    <span style={{ color: accentColor }}>📧</span>
                                     <span>{data.personal_info.email}</span>
                                 </div>
                             )}
                             {data.personal_info?.location && (
                                 <div className="flex items-center gap-2">
-                                    <MapPin size={14} style={{ color: accentColor }} />
+                                    <span style={{ color: accentColor }}>📍</span>
                                     <span>{data.personal_info.location}</span>
                                 </div>
                             )}
-                            {/* শুধু এই 2টা লাইন যোগ করুন - LinkedIn */}
+                            {/* LinkedIn */}
                             {data.personal_info?.linkedin && (
                                 <div className="flex items-center gap-2">
                                     <span style={{ color: accentColor }}>🔗</span>
                                     <span className="break-all text-xs">{data.personal_info.linkedin}</span>
                                 </div>
                             )}
-                            {/* শুধু এই 2টা লাইন যোগ করুন - Website */}
+                            {/* Website */}
                             {data.personal_info?.website && (
                                 <div className="flex items-center gap-2">
                                     <span style={{ color: accentColor }}>🌐</span>
@@ -335,7 +333,7 @@ const MinimalImageTemplate = ({ data, accentColor }) => {
                             <div className="space-y-6 mb-8">
                                 {data.experience.map((exp, index) => (
                                     <div key={index}>
-                                        <div className="flex justify-between items-center">
+                                        <div className="flex justify-between items-center flex-wrap gap-2">
                                             <h3 className="font-semibold text-zinc-900">
                                                 {exp.position}
                                             </h3>
@@ -348,11 +346,9 @@ const MinimalImageTemplate = ({ data, accentColor }) => {
                                             {exp.company}
                                         </p>
                                         {exp.description && (
-                                            <ul className="list-disc list-inside text-sm text-zinc-700 leading-relaxed space-y-1">
-                                                {exp.description.split("\n").map((line, i) => (
-                                                    <li key={i}>{line}</li>
-                                                ))}
-                                            </ul>
+                                            <div className="text-sm text-zinc-700 leading-relaxed whitespace-pre-line">
+                                                {exp.description}
+                                            </div>
                                         )}
                                     </div>
                                 ))}
@@ -374,11 +370,9 @@ const MinimalImageTemplate = ({ data, accentColor }) => {
                                             {project.type}
                                         </p>
                                         {project.description && (
-                                            <ul className="list-disc list-inside text-sm text-zinc-700  space-y-1">
-                                                {project.description.split("\n").map((line, i) => (
-                                                    <li key={i}>{line}</li>
-                                                ))}
-                                            </ul>
+                                            <div className="text-sm text-zinc-700 whitespace-pre-line">
+                                                {project.description}
+                                            </div>
                                         )}
                                     </div>
                                 ))}

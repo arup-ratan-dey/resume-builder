@@ -233,6 +233,221 @@ export const dummyResumeData = [
         ],
         updatedAt: "2025-09-25T15:26:49.652Z",
         createdAt: "2025-09-25T15:26:49.652Z"
+    },
+    {
+        // =====================================================
+        // 2. MINIMAL TEMPLATE (ছবি ছাড়া)
+        // =====================================================
+        _id: "resume_minimal_002",
+        title: "Ethan Chen - Minimal",
+        template: "minimal",
+        accent_color: "#6366F1",
+        personal_info: {
+            full_name: "Ethan Chen",
+            email: "ethan.chen@example.com",
+            phone: "+1 (206) 555-7890",
+            location: "Seattle, WA, USA",
+            linkedin: "https://linkedin.com/in/ethanchen",
+            website: "https://ethanchen.dev",
+            profession: "Data Scientist",
+            image: null
+        },
+        professional_summary: "Results-driven Data Scientist with 4+ years of experience in machine learning, statistical analysis, and big data processing. Expert in Python, SQL, and TensorFlow. Proven track record of turning complex data into actionable business insights.",
+        skills: ["Python", "SQL", "TensorFlow", "PyTorch", "Pandas", "NumPy", "Tableau", "Power BI", "AWS", "Machine Learning"],
+        experience: [
+            {
+                company: "DataMind Analytics",
+                position: "Data Scientist",
+                start_date: "2021-09",
+                end_date: "Present",
+                description: "Developed predictive models that increased customer retention by 25%. Built ETL pipelines processing 10M+ records daily. Presented insights to C-level executives.",
+                is_current: true
+            },
+            {
+                company: "Tech Solutions Inc.",
+                position: "Junior Data Analyst",
+                start_date: "2020-01",
+                end_date: "2021-08",
+                description: "Created dashboards and reports for stakeholders. Performed data cleaning and validation. Automated repetitive tasks saving 15+ hours weekly.",
+                is_current: false
+            }
+        ],
+        education: [
+            {
+                institution: "University of Washington",
+                degree: "M.S.",
+                field: "Data Science",
+                graduation_date: "2020-05",
+                gpa: "3.9"
+            },
+            {
+                institution: "University of California, Berkeley",
+                degree: "B.S.",
+                field: "Statistics",
+                graduation_date: "2018-05",
+                gpa: "3.7"
+            }
+        ],
+        project: [
+            {
+                name: "Customer Churn Prediction",
+                type: "Machine Learning",
+                description: "Built a machine learning model to predict customer churn with 89% accuracy, helping business reduce customer loss by 30%."
+            },
+            {
+                name: "Sales Forecasting Dashboard",
+                type: "Data Visualization",
+                description: "Created interactive Tableau dashboard for sales forecasting, enabling better inventory management decisions."
+            }
+        ],
+        updatedAt: new Date().toISOString(),
+        createdAt: new Date().toISOString()
+    },
+        {
+        // =====================================================
+        // 3. CLASSIC TEMPLATE
+        // =====================================================
+        _id: "resume_classic_003",
+        title: "Isabella Rossi - Classic",
+        template: "classic",
+        accent_color: "#DC2626",
+        personal_info: {
+            full_name: "Isabella Rossi",
+            email: "isabella.rossi@example.com",
+            phone: "+1 (312) 555-4567",
+            location: "Chicago, IL, USA",
+            linkedin: "https://linkedin.com/in/isabellarossi",
+            website: "https://isabellarossi.com",
+            profession: "Marketing Director",
+            image: dummy_profile
+        },
+        professional_summary: "Strategic Marketing Director with 8+ years of experience driving brand growth and digital transformation. Expertise in content strategy, social media marketing, and team leadership. Increased brand awareness by 150% and generated $5M+ in revenue.",
+        skills: ["Digital Marketing", "Content Strategy", "SEO/SEM", "Social Media", "Google Analytics", "Email Marketing", "Brand Management", "Team Leadership", "Budget Management", "Market Research"],
+        experience: [
+            {
+                company: "Global Brands Group",
+                position: "Marketing Director",
+                start_date: "2021-01",
+                end_date: "Present",
+                description: "Lead marketing strategy for 3 major brands. Managed $2M annual budget and 12-person team. Achieved 40% YoY growth in digital channels.",
+                is_current: true
+            },
+            {
+                company: "Creative Marketing Agency",
+                position: "Senior Marketing Manager",
+                start_date: "2018-04",
+                end_date: "2020-12",
+                description: "Developed and executed marketing campaigns for 15+ clients. Increased client ROI by average of 65%. Built strong relationships with media partners.",
+                is_current: false
+            },
+            {
+                company: "StartUp Ventures",
+                position: "Marketing Specialist",
+                start_date: "2016-06",
+                end_date: "2018-03",
+                description: "Managed social media presence across platforms. Created content calendar and grew following from 5k to 50k in 18 months.",
+                is_current: false
+            }
+        ],
+        education: [
+            {
+                institution: "Northwestern University",
+                degree: "MBA",
+                field: "Marketing",
+                graduation_date: "2016-05",
+                gpa: "3.8"
+            },
+            {
+                institution: "University of Michigan",
+                degree: "B.A.",
+                field: "Communications",
+                graduation_date: "2014-05",
+                gpa: "3.7"
+            }
+        ],
+        project: [
+            {
+                name: "Brand Revival Campaign",
+                type: "Marketing Campaign",
+                description: "Led complete brand overhaul for heritage brand resulting in 200% increase in engagement and 85% increase in sales."
+            },
+            {
+                name: "Digital Transformation Initiative",
+                type: "Strategy Project",
+                description: "Implemented new marketing automation tools and processes, reducing manual work by 60% and improving lead conversion by 35%."
+            }
+        ],
+        updatedAt: new Date().toISOString(),
+        createdAt: new Date().toISOString()
+        },
+            {
+        // =====================================================
+        // 4. MODERN TEMPLATE
+        // =====================================================
+        _id: "resume_modern_004",
+        title: "Marcus Williams - Modern",
+        template: "modern",
+        accent_color: "#8B5CF6",
+        personal_info: {
+            full_name: "Marcus Williams",
+            email: "marcus.williams@example.com",
+            phone: "+1 (512) 555-9012",
+            location: "Austin, TX, USA",
+            linkedin: "https://linkedin.com/in/marcuswilliams",
+            website: "https://marcuswilliams.io",
+            profession: "Cloud Architect",
+            image: dummy_profile
+        },
+        professional_summary: "Certified Cloud Architect with 7+ years of experience designing and implementing scalable cloud solutions on AWS and Azure. Expert in DevOps practices, infrastructure as code, and system optimization. Reduced operational costs by 35% through strategic cloud migrations.",
+        skills: ["AWS", "Azure", "Docker", "Kubernetes", "Terraform", "Jenkins", "Python", "Linux", "CI/CD", "Microservices"],
+        experience: [
+            {
+                company: "CloudNative Solutions",
+                position: "Senior Cloud Architect",
+                start_date: "2021-06",
+                end_date: "Present",
+                description: "Design cloud architecture for enterprise clients. Lead migration of 50+ applications to cloud. Implemented cost optimization strategies saving $500k annually.",
+                is_current: true
+            },
+            {
+                company: "Tech Infrastructure Inc.",
+                position: "DevOps Engineer",
+                start_date: "2019-01",
+                end_date: "2021-05",
+                description: "Built and maintained CI/CD pipelines. Automated deployment processes reducing deployment time by 80%. Managed Kubernetes clusters in production.",
+                is_current: false
+            }
+        ],
+        education: [
+            {
+                institution: "University of Texas",
+                degree: "M.S.",
+                field: "Cloud Computing",
+                graduation_date: "2019-05",
+                gpa: "4.0"
+            },
+            {
+                institution: "Georgia Institute of Technology",
+                degree: "B.S.",
+                field: "Computer Engineering",
+                graduation_date: "2017-05",
+                gpa: "3.8"
+            }
+        ],
+        project: [
+            {
+                name: "Multi-Cloud Deployment Platform",
+                type: "Cloud Architecture",
+                description: "Designed and implemented a platform for deploying applications across AWS, Azure, and GCP with unified management interface."
+            },
+            {
+                name: "Serverless ETL Pipeline",
+                type: "Data Engineering",
+                description: "Built serverless ETL pipeline using AWS Lambda, Glue, and S3, processing 100GB+ data daily with 99.9% reliability."
+            }
+        ],
+        updatedAt: new Date().toISOString(),
+        createdAt: new Date().toISOString()
     }
 ]
 
