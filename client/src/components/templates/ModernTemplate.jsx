@@ -418,7 +418,7 @@ const ModernTemplate = ({ data, accentColor }) => {
                         </div>
                     )}
                     
-                    {/* LinkedIn - emoji ব্যবহার করা হয়েছে */}
+                    {/* LinkedIn - emoji */}
                     {data?.personal_info?.linkedin && (
                         <a 
                             href={data.personal_info.linkedin} 
@@ -432,8 +432,10 @@ const ModernTemplate = ({ data, accentColor }) => {
                             </span>
                         </a>
                     )}
+
+
                     
-                    {/* Website - emoji ব্যবহার করা হয়েছে */}
+                    {/* Website - emoji */}
                     {data?.personal_info?.website && (
                         <a 
                             href={data.personal_info.website} 

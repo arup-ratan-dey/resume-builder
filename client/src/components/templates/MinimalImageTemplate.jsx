@@ -467,6 +467,7 @@ const MinimalImageTemplate = ({ data, accentColor }) => {
                                     <span>{data.personal_info.location}</span>
                                 </div>
                             )}
+
                             {/* LinkedIn - emoji */}
                             {data.personal_info?.linkedin && (
                                 <div className="flex items-center gap-2">
@@ -474,7 +475,9 @@ const MinimalImageTemplate = ({ data, accentColor }) => {
                                     <span className="break-all text-xs">{data.personal_info.linkedin}</span>
                                 </div>
                             )}
-                            {/* Website - emoji */}
+
+
+                            {/* Website */}
                             {data.personal_info?.website && (
                                 <div className="flex items-center gap-2">
                                     <span style={{ color: accentColor }}>🌐</span>
@@ -484,7 +487,7 @@ const MinimalImageTemplate = ({ data, accentColor }) => {
                         </div>
                     </section>
 
-                    {/* Education - GPA যোগ করা হয়েছে */}
+                    {/* Education - GPA */}
                     {data.education && data.education.length > 0 && (
                         <section className="mb-8">
                             <h2 className="text-sm font-semibold tracking-widest text-zinc-600 mb-3">
@@ -498,7 +501,7 @@ const MinimalImageTemplate = ({ data, accentColor }) => {
                                         <p className="text-xs text-zinc-500">
                                             {formatDate(edu.graduation_date)}
                                         </p>
-                                        {/* GPA যোগ করা হলো */}
+                                        {/* GPA */}
                                         {edu.gpa && (
                                             <p className="text-xs text-zinc-500 mt-1">
                                                 GPA: {edu.gpa}

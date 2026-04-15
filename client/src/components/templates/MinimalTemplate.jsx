@@ -319,14 +319,17 @@ const MinimalTemplate = ({ data, accentColor }) => {
                             <span>{data.personal_info.location}</span>
                         </div>
                     )}
-                    {/* LinkedIn - emoji ব্যবহার করা হয়েছে */}
+
+                    {/* LinkedIn - emoji*/}
                     {data.personal_info?.linkedin && (
                         <div className="flex items-center gap-1">
                             <span style={{ color: accentColor }}>🔗</span>
                             <span className="break-all">{data.personal_info.linkedin}</span>
                         </div>
                     )}
-                    {/* Website - emoji ব্যবহার করা হয়েছে */}
+
+
+                    {/* Website */}
                     {data.personal_info?.website && (
                         <div className="flex items-center gap-1">
                             <span style={{ color: accentColor }}>🌐</span>
