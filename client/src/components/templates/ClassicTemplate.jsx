@@ -514,3 +514,7 @@ const ClassicTemplate = ({ data, accentColor }) => {
 }
 
 export default ClassicTemplate
+
+
+
+
